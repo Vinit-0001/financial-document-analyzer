@@ -136,6 +136,8 @@ Risk Assessment Analyst
 2) Capabilities: Market risk, credit risk, operational risk assessment
 3) Tools: Web search for current market conditions
 
+```
+
 **PROJECT STRUCTURE**
 
 financial-document-analyzer/
@@ -149,17 +151,22 @@ financial-document-analyzer/
 ├── README.md            # This documentation
 └── data/                # Uploaded files directory
 
+```
+
 **Development**
 
 Testing
 # Run the application in development mode
+```
 uvicorn main:app --reload --log-level debug
+```
 
 # Test with curl
+```
 curl -X POST "http://127.0.0.1:8000/analyze/" \
   -F "file=@test_document.pdf" \
   -F "query=Test analysis"
-
+```
 
 🚨 Error Handling
 
