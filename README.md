@@ -114,7 +114,7 @@ GET /status/{job_id}
   "result": {...}
 }
 
-```bash
+```
 
 Agent Roles
 
